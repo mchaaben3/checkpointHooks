@@ -11,7 +11,7 @@ const ListMovies = (props) => {
         
 
         {
- props.list.map((elem) =>  <Movie  movie={elem} />)
+               props.list.map((elem) =>  <Movie  movie={elem} />)
         }
 
 

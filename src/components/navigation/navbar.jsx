@@ -1,11 +1,23 @@
 import React from 'react'
-import StarRatingComponent from 'react-star-rating-component';
+import { useHistory } from 'react-router';
 import ButtonAdd from '../add/ButtonAdd';
 import { Rate } from '../Rating/Rate';
 
 export const Navbar = (props) => {
+  const history=useHistory()
+
     return (
       <div className="px-4 h-20 bg-gray-900 w-screen fixed z-10 md:max-w-8xl">
+         <div className="flex space-x-2 float-left mt-5" >
+           
+                 <button
+                    className="text-white background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                    type="button"
+                    onClick={() => history.goBack()}
+                  >
+                    Home
+                  </button>
+           </div>
           <div className="flex space-x-2 float-left mt-5" >
            
           <ButtonAdd handleAddNewMovie={props.handleAddNewMovie}/>
