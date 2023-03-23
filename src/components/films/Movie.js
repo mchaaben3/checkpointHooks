@@ -11,7 +11,7 @@ export default function Movie({movie}) {
                 <img src={movie.posterURL} alt="" className="w-full h-96 object-center object-cover group-hover:opacity-75" />
             </div>
 
-            <h2 className="mt-4 text-4xl text-white">{movie.title}</h2>
+            <h2 className="mt-4 text-4xl text-gray-100">{movie.title}</h2>
             <p className="mt-1 text-sm font-medium text-white">{movie.description}</p>
             <p className="mt-1 text-xlg font-medium text-wjote">
           
